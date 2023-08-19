@@ -1,0 +1,39 @@
+@import '/src/styles.scss';
+
+/* Mouse animation */
+.cursor{
+    position: fixed;
+    display: none;
+    z-index: 999;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    pointer-events: none;
+    // box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 100px rgba(255, 255, 255, 0.2);
+
+}
+
+@keyframes colors {
+    0%{
+        opacity: 10%;
+    }
+    50%{
+        opacity: 8%;
+    }
+    100%{
+        opacity: 10%;
+    }
+}
+
+.cursor:before{
+    content: '';
+    position: absolute;
+    background-color: beige;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 100px rgba(255, 255, 255, 0.2);
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 10%;
+    animation: colors 5s infinite;
+}
