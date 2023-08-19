@@ -1,0 +1,25 @@
+@import '/src/styles.scss';
+
+.row{
+    text-transform: uppercase;
+    h2, h3{
+        font-family: $title-font;
+        font-weight: bold;
+        color: #FFF;
+    }
+    h2{
+        font-size: 52px;
+    }
+    p{
+        font-family: $regular-font;
+        color: $text-regular-color;
+        font-size: 24px;
+    }
+
+    img{
+        margin-top: 60px;
+        border-radius: 50%;
+        border: 3px solid $primary-color;
+        box-shadow: 8px 16px 150px rgba(7, 240, 192, 0.25);
+    }
+}
