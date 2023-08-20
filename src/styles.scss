@@ -1,12 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-$regular-font: 'Baloo 2', cursive;
-$title-font: 'Poppins', sans-serif;
+$regular-font: "Baloo 2", cursive;
+$title-font: "Poppins", sans-serif;
 
-$primary-color: #40916C;
-$secondary-color: #272B2C;
-$text-regular-color: #A1A1A1;
+$primary-color: #40916c;
+$secondary-color: #272b2c;
+$text-regular-color: #a1a1a1;
+
 
 body {
     background-color: $secondary-color;
     font-family: $regular-font;
+}
+html {
+    font-size: 16px; 
+}
+
+// Breakpoint para Tablet (largura entre 768px e 992px)
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    html {
+        font-size: 14px; 
+    }
+}
+
+// Breakpoint para Dispositivos Móveis (largura até 768px)
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px; 
+    }
 }
